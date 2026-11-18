@@ -1,13 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Your Name – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Hello, world!</h1>
-    <p>My personal portfolio is coming soon.</p>
+  <canvas id="sky" aria-hidden="true"></canvas>
+
+  <main>
+    <header>
+      <h1>Samuel G. Guerrero Camarero</h1>
+      <p class="role">Your role, e.g. Front-end developer</p>
+      <p class="lead">Two or three sentences about who you are, what you build and what you’re looking for. Replace this
+        text with your own.</p>
+    </header>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="job">
+        <div class="when">2023 – now</div>
+        <div>
+          <h3>Job title, Company</h3>
+          <p>One line about what you did and the result.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">2021 – 2023</div>
+        <div>
+          <h3>Job title, Company</h3>
+          <p>One line about what you did and the result.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="job">
+        <div class="when">2017 – 2021</div>
+        <div>
+          <h3>Degree, University</h3>
+          <p>Focus area or thesis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>JavaScript</li>
+        <li>HTML &amp; CSS</li>
+        <li>Python</li>
+        <li>Git</li>
+        <li>English</li>
+        <li>Spanish</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p><a href="mailto:you@example.com">you@example.com</a><br>
+        <a href="https://github.com/">GitHub</a> · <a href="https://linkedin.com/">LinkedIn</a> · <a
+          href="cv.pdf">Download CV (PDF)</a>
+      </p>
+    </section>
+  </main>
+
+  <div id="hud"><span>Fly the drone with the arrow keys</span>
+    <button id="toggle">Turn off drone</button>
+  </div>
+  <div id="stick" aria-hidden="true">
+    <div id="knob"></div>
+  </div>
+
+  <div id="tryme" aria-hidden="true">
+    <svg class="tm-arrow tm-stick" viewBox="0 0 36 28">
+      <path d="M34 14H10M20 3L6 14l14 11" />
+    </svg>
+    <svg class="tm-arrow tm-btn" viewBox="0 0 36 28">
+      <path d="M2 14h24M16 3l14 11-14 11" />
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
