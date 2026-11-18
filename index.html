@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Name – Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,8 @@
 
   <main>
     <header>
-      <h1>Samuel G. Guerrero Camarero</h1>
-      <p class="role">Your role, e.g. Front-end developer</p>
+      <h1>Samuel Guillermo Guerrero Camarero</h1>
+      <p class="role">PhD Researcher, Software Developer, Physicist.</p>
       <p class="lead">Two or three sentences about who you are, what you build and what you’re looking for. Replace this
         text with your own.</p>
     </header>
@@ -74,20 +74,22 @@
     </section>
   </main>
 
-  <div id="hud"><span>Fly the drone with the arrow keys</span>
-    <button id="toggle">Turn off drone</button>
-  </div>
-  <div id="stick" aria-hidden="true">
-    <div id="knob"></div>
-  </div>
+  <div id="ui">
+    <div id="hud"><span>Fly the drone with the arrow keys</span>
+      <button id="toggle">Turn off drone</button>
+    </div>
+    <div id="stick" aria-hidden="true">
+      <div id="knob"></div>
+    </div>
 
-  <div id="tryme" aria-hidden="true">
-    <svg class="tm-arrow tm-stick" viewBox="0 0 36 28">
-      <path d="M34 14H10M20 3L6 14l14 11" />
-    </svg>
-    <svg class="tm-arrow tm-btn" viewBox="0 0 36 28">
-      <path d="M2 14h24M16 3l14 11-14 11" />
-    </svg>
+    <div id="tryme" aria-hidden="true">
+      <svg class="tm-arrow tm-stick" viewBox="0 0 36 28">
+        <path d="M34 14H10M20 3L6 14l14 11" />
+      </svg>
+      <svg class="tm-arrow tm-btn" viewBox="0 0 36 28">
+        <path d="M2 14h24M16 3l14 11-14 11" />
+      </svg>
+    </div>
   </div>
 
   <script src="script.js"></script>

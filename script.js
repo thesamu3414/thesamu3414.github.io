@@ -188,6 +188,9 @@
 
         // LED light
         var blinkOn = (performance.now() % 1200) < 150;
+        if (state === 'landed' || state === 'falling') {
+            blinkOn = false;
+        }
         if (blinkOn) {
             ctx.fillStyle = led;
             ctx.beginPath(); ctx.arc(0, 9, 7, 0, 6.283); ctx.fill();

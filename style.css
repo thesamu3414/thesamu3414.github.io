@@ -233,6 +233,18 @@ button:focus-visible {
     -webkit-user-select: none;
 }
 
+#ui {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#ui #hud,
+#ui #stick {
+    pointer-events: auto
+}
+
 #knob {
     position: absolute;
     left: 50%;
@@ -260,7 +272,6 @@ button:focus-visible {
     display: none;
     position: fixed;
     inset: 0;
-    z-index: 3;
     pointer-events: none;
     /* never blocks taps on the stick or button */
     transition: opacity .4s;
